@@ -4,6 +4,9 @@ import java.util.stream.Collectors;
 
 public class StringApiEnhancements {
     public static void isBlankExample() {
+        String emptyString = "";
+        System.out.println(emptyString.isBlank()); // true
+
         String stringOfBlanks = "   ";
         System.out.println(stringOfBlanks.isBlank()); // true
 
