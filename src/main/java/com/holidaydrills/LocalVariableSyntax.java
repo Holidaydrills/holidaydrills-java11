@@ -1,6 +1,7 @@
 package com.holidaydrills;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.function.BiFunction;
 import java.util.function.Function;
@@ -74,6 +75,17 @@ public class LocalVariableSyntax {
         // However this would work:
         var yetAnotherArray= new int[]{1, 2, 3, 4, 5};
 
+        testId1(3);
+
     }
+
+    public <E extends Integer> void testId1(E param) {
+        var map1 = new HashMap(); // Inferred as HashMap
+        var map2 = new HashMap<>();
+        var map3 = new HashMap<Integer, Integer>();
+        var map4 = new HashMap<E, E >();
+        System.out.println();
+    }
+
 
 }
